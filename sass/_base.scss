@@ -1,0 +1,110 @@
+* {
+	@include border-box-sizing();
+}
+
+html {
+	-ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+  -webkit-font-smoothing: antialiased;   // maxvoltar.com/archive/-webkit-font-smoothing
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  line-height: 26px;
+  font-size: 16px;
+  font-weight: 300;
+  @extend %strip-margin-padding;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(244, 244, 244);
+  color: rgb(9, 14, 55);
+  // letter-spacing: 0.02em;
+}
+
+
+a {
+  @extend %strip-margin-padding;
+  color: $link;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 2px;
+  font-weight: 700;
+  &:active  { color: $link-active-state;}
+  &:visited { 
+    color: $link-visited-state;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  &:focus   { color: $link-focus-state;}
+  &:hover   { 
+    color: $primaryColor  ;
+    // background-color: $link;
+    background-color: rgba(32, 152, 183, 0.1);
+    -webkit-transition: background 400ms ease;
+    transition:         background 400ms ease;
+  }
+}
+
+::selection {
+  color: $selection ;
+  background: $selection-bg ; /* Safari */
+  }
+::-moz-selection {
+  color: $selection ;
+  background: $selection-bg ; /* Firefox */
+}
+
+// TYPOGRAPHY.
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  &:first-child { margin-top: 0; }
+}
+
+h1 { font-size: 1.5em;}
+
+
+ul, ol {
+  @extend %strip-margin-padding;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  @extend %strip-margin-padding;
+  a { display: block; }
+}
+
+
+// IMAGES.
+figure {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  > img {
+      display: block;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  a & {
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+embed,
+iframe,
+object,
+video {
+  max-width: 100%;
+}
+

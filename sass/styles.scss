@@ -1,0 +1,102 @@
+@import "compass";
+@import "susy";
+@import "breakpoint"; 
+
+@import "variables";
+@import "base";
+@import "utilities";
+@import "mywork";
+@import "aboutme";
+@import "backtotop";
+
+
+.container {
+  @include container(960px);
+}
+
+header {
+  background-color: rgb(9, 14, 55);
+  font-weight: 300; 
+  line-height: 48px;
+  border-bottom: 2px solid $secondaryColor;
+  margin-bottom: 0;
+}
+
+nav.share-my-work {
+  @extend %horizontalnav;
+  @include span(last);
+  ul li a:before {
+    @extend %fa;
+    margin-right: 5px;
+    color: white;
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .mygithub {
+    @extend %text-hide;
+    margin-right: 5px;
+    &:before { content: "\f113"; }
+  }
+  .mycodepen {
+    @extend %text-hide;
+    &:before { content: "\f1cb"; }
+  }
+}
+
+.site-title {
+  @extend %brand-text;
+  margin: 0;
+  display: inline-block;
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    &:hover {
+      font-size: 1.3em;
+      color: rgba(255, 255, 255, 1);
+      text-decoration: underline;
+      -webkit-transition: color 400ms ease, font-size 400ms ease;
+      transition:         color 400ms ease, font-size 400ms ease;
+    }
+  }
+}
+
+footer {
+	line-height: 80px;
+  background-color: rgb(9, 14, 55);
+}
+.copyright {
+  font-size: 24px;
+  text-align: center; 
+  color: rgba(255, 255, 255, 0.5);
+}
+.heart:before {
+	@extend %fa;
+	content: "\f004";
+	color: red;
+	margin: 0 3px;
+}
+
+.madewithlove{
+  @extend %brand-text;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: background-color 400ms ease;
+    transition: background-color 400ms ease;
+  }
+}
+
+.logo {
+  @extend %brand-text;
+  color: $secondaryColor;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.26em;
+  margin-right: 20px;
+  @include breakpoint(320px) {
+    margin-left: 10px;
+  }
+  @include breakpoint(768px) {
+    margin-left: 0px;
+  }
+}

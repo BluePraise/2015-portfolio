@@ -1,0 +1,41 @@
+// COLORS
+
+// The basics
+$black              : #000;
+$white              : #fff;
+$grey               : rgba(0,0,0,1);
+$greydark           : rgb(119, 119, 119); 
+
+$mainColor          : rgb(9, 14, 55);
+$primaryColor       : rgb(9, 14, 55);
+$secondaryColor     : #2098b7;
+
+
+$textColor          : $mainColor;
+$headercolor        : $primaryColor;
+
+// Links and Buttons, incl states
+$link               : $secondaryColor;
+$link-active-state  : $secondaryColor;
+$link-hover-state   : $secondaryColor; 
+$link-visited-state : $secondaryColor;
+$link-focus-state   : $secondaryColor;
+
+$selection-bg       : $black; //yellow
+$selection          : $white;
+
+$oswald 						: 'Oswald', sans-serif;
+
+$susy: (
+	columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  debug: (
+    image: hide,
+    color: yellow,
+    output: background,
+    toggle: top right,
+  ),
+);

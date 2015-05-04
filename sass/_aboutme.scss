@@ -1,0 +1,77 @@
+.about-me {
+	margin-bottom: 20px;
+}
+
+.looking-good {
+	margin-top: 0;
+}
+
+.magalielinda {
+	position: relative;	
+}
+.cta-buttons {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+  top: 70%;
+}
+
+.cta-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-family: $oswald;
+  font-size: 1.2em;
+  font-weight: 700;
+	text-transform: uppercase;
+  line-height: 2.20em;
+  // color: rgba(32, 152, 183, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+  // background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(32, 152, 183, 0.5);
+  border-radius: 3px;
+  border-bottom: 1px solid #2098b7;
+  opacity: 0;
+  &:hover {
+  	background-color: rgba(32, 152, 183, 0.8);
+  }
+  &:visited {
+	  background-color: rgba(32, 152, 183, 0.5);
+	  color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+header.section-intro {
+	background-color: transparent;	
+  border-bottom: 1px solid rgba(204, 204, 204, 0.47);
+  line-height: 1em;
+	span {
+		display: inline-block;
+	}
+	h3 {
+		display: inline-block;
+	}	
+
+}
+
+.definitions {
+	@include breakpoint(960px) {
+		@include span(5 of 12);
+		margin-left: span(1);
+	}
+}
+.definitions ol {
+	margin-top: 20px;
+	margin-left: 40px;
+}
+
+.origins {
+	@include breakpoint(960px) {
+		margin-right: span(1);
+		@include span(5 last of 12);
+	}
+	h3 { margin: 1em 0; }
+	ul {
+	  margin-top: 20px;
+	  margin-left: 40px;
+	}
+}

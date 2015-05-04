@@ -1,0 +1,111 @@
+section {
+	@include span(12 of 12);
+	@include breakpoint(320px) {
+		padding: 0 10px;
+	}
+	@include breakpoint(768px) {
+		padding: 0 0px;
+	}
+}
+
+.work { 
+	clear: both; 
+	ul {
+		list-style: none;
+		li.work-item {
+			@include breakpoint(320px) {
+		  	@include gallery(6 of 12);
+			}
+			@include breakpoint(768px) {
+		  	@include gallery(4 of 12);
+			}
+			margin-bottom: 30px;
+			img {
+				display: block;
+				padding: 0 20px;
+			}
+		}
+	}
+}
+
+.section-title {
+	text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: $oswald;
+  background-color: rgba(32, 152, 183, 0.5);
+  padding-left: 10px;
+  line-height: 2.20em;
+  border-radius: 3px;
+  border-bottom: 2px solid #2098b7
+}
+
+.work-item > a {
+	display: block;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.47);
+	&:hover {
+		border-bottom: 1px solid $secondaryColor;
+	}
+}
+
+p.work-label {
+	margin: 0;
+	text-align: center;
+	line-height: 1.2em;
+  height: 45px;
+}
+
+.work-details {
+	ul {
+		@include breakpoint(320px) {
+			padding: 0 1em;	
+		}
+		padding: 0 2em;	
+	}
+	a {
+		font-weight: 100;
+		font-family: $oswald;
+  	text-decoration: none;
+	}
+}
+
+.wordpress:before {
+	@extend %fa;
+	margin-right: 10px;
+	content: "\f19a";
+}
+
+.github:before {
+	@extend %fa;
+	margin-right: 10px;
+	content: "\f09b";
+}
+
+.code:before {
+	@extend %fa;
+	margin-right: 10px;
+	content: "\f121";
+}
+
+.drupal:before {
+	@extend %fa;
+	margin-right: 10px;
+	content: "\f1a9";
+}
+
+.employer:before {
+	@extend %fa;
+	margin-right: 10px;
+	content: "\f0b1";
+}
+
+.fivestars {
+	@extend %fa;
+	content: "\f005";
+}
+
+.threestars {
+	@extend %fa;
+	content: "\f005";
+}
