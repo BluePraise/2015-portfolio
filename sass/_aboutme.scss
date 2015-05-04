@@ -72,6 +72,21 @@ header.section-intro {
 	h3 { margin: 1em 0; }
 	ul {
 	  margin-top: 20px;
-	  margin-left: 40px;
+	  margin-left: 10px;
+	  display: table;
+	  li {
+	  	display: table-row;
+	  }
 	}
+}
+
+.skill-label,
+.stars {
+	display: table-cell;
+}
+
+.stars { padding-left: 10px; }
+
+.fa-star-o {
+	color: #ccc;
 }

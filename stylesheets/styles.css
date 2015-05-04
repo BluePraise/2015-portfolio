@@ -110,7 +110,7 @@ nav.share-my-work ul li {
   float: left;
 }
 
-.wordpress:before, .github:before, .code:before, .drupal:before, .employer:before, .fivestars, .threestars, nav.share-my-work ul li a:before, .heart:before {
+.wordpress:before, .github:before, .code:before, .drupal:before, .employer:before, nav.share-my-work ul li a:before, .heart:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -444,14 +444,6 @@ p.work-label {
   content: "\f0b1";
 }
 
-.fivestars {
-  content: "\f005";
-}
-
-.threestars {
-  content: "\f005";
-}
-
 .about-me {
   margin-bottom: 20px;
 }
@@ -530,7 +522,24 @@ header.section-intro h3 {
 }
 .origins ul {
   margin-top: 20px;
-  margin-left: 40px;
+  margin-left: 10px;
+  display: table;
+}
+.origins ul li {
+  display: table-row;
+}
+
+.skill-label,
+.stars {
+  display: table-cell;
+}
+
+.stars {
+  padding-left: 10px;
+}
+
+.fa-star-o {
+  color: #ccc;
 }
 
 .cd-top {
