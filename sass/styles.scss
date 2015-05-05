@@ -25,16 +25,29 @@ header {
 nav.share-my-work {
   @extend %horizontalnav;
   @include span(last);
-  ul li a:before {
-    @extend %fa;
-    margin-right: 5px;
-    color: white;
-    font-size: 30px;
-    line-height: 55px;
+  ul li a {
+    &:before {
+      @extend %fa;
+      margin-right: 5px;
+      color: white;
+      font-size: 30px;
+      line-height: 55px;
+    }
+    &:visited {
+      &:before {
+        color: $white;
+      }
+    }
+    &:hover {
+      &:before {
+        color: $secondaryColor;
+      }
+    }
   }
+  
   .mygithub {
-    @extend %text-hide;
     margin-right: 5px;
+    @extend %text-hide;
     &:before { content: "\f113"; }
   }
   .mycodepen {

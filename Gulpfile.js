@@ -72,5 +72,5 @@ gulp.task('speak', function() {
 // Wraps up the project and make it ready for the
 // production environment. Minify CSS. Minify JS
 // Minify the images
-gulp.task('wrapitup', ['speak','images', 'minify', 'uglify']);
+gulp.task('wrapitup', ['speak', 'minify', 'uglify']);
 // gulp.watch(['images']);

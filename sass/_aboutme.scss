@@ -54,6 +54,9 @@ header.section-intro {
 }
 
 .definitions {
+	@include breakpoint(768px) {
+		margin: 0 20px;
+	}
 	@include breakpoint(960px) {
 		@include span(5 of 12);
 		margin-left: span(1);
@@ -65,6 +68,11 @@ header.section-intro {
 }
 
 .origins {
+	@include breakpoint(320px) {
+		.resume {
+			text-align: center;
+		}
+	}
 	@include breakpoint(960px) {
 		margin-right: span(1);
 		@include span(5 last of 12);
@@ -72,6 +80,7 @@ header.section-intro {
 	h3 { margin: 1em 0; }
 	ul {
 	  margin-top: 20px;
+	  margin-bottom: 20px;
 	  margin-left: 10px;
 	  display: table;
 	  li {
@@ -89,4 +98,27 @@ header.section-intro {
 
 .fa-star-o {
 	color: #ccc;
+}
+
+.fa-download {
+	font-size: 30px;
+  margin-right: 10px;
+	vertical-align: sub;
+  color: #ccc;
+}
+
+.resume a {
+	display: inline-block;
+	padding: 5px;
+	font-family: $oswald;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.resume:hover {
+	.fa-download {
+  	color: $mainColor;
+  	-webkit-transition: color 400ms ease;
+    transition:         color 400ms ease;
+	}
 }

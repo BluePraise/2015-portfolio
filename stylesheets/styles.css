@@ -497,6 +497,11 @@ header.section-intro h3 {
   display: inline-block;
 }
 
+@media (min-width: 768px) {
+  .definitions {
+    margin: 0 20px;
+  }
+}
 @media (min-width: 960px) {
   .definitions {
     width: 40.67797%;
@@ -510,6 +515,11 @@ header.section-intro h3 {
   margin-left: 40px;
 }
 
+@media (min-width: 320px) {
+  .origins .resume {
+    text-align: center;
+  }
+}
 @media (min-width: 960px) {
   .origins {
     margin-right: 6.77966%;
@@ -522,6 +532,7 @@ header.section-intro h3 {
 }
 .origins ul {
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 10px;
   display: table;
 }
@@ -540,6 +551,27 @@ header.section-intro h3 {
 
 .fa-star-o {
   color: #ccc;
+}
+
+.fa-download {
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: sub;
+  color: #ccc;
+}
+
+.resume a {
+  display: inline-block;
+  padding: 5px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.resume:hover .fa-download {
+  color: #090e37;
+  -webkit-transition: color 400ms ease;
+  transition: color 400ms ease;
 }
 
 .cd-top {
@@ -621,6 +653,12 @@ nav.share-my-work ul li a:before {
   color: white;
   font-size: 30px;
   line-height: 55px;
+}
+nav.share-my-work ul li a:visited:before {
+  color: #fff;
+}
+nav.share-my-work ul li a:hover:before {
+  color: #2098b7;
 }
 nav.share-my-work .mygithub {
   margin-right: 5px;
