@@ -291,7 +291,7 @@ nav ol {
   visibility: hidden;
 }
 
-nav.share-my-work .mygithub, nav.share-my-work .mycodepen {
+nav.share-my-work .mygithub, nav.share-my-work .mycodepen, nav.share-my-work .mylinkedin {
   font: 0/0 a;
   color: transparent;
   text-shadow: none;
@@ -668,6 +668,12 @@ nav.share-my-work .mygithub:before {
 }
 nav.share-my-work .mycodepen:before {
   content: "\f1cb";
+}
+nav.share-my-work .mylinkedin {
+  margin-right: 5px;
+}
+nav.share-my-work .mylinkedin:before {
+  content: "\f0e1";
 }
 
 .site-title {

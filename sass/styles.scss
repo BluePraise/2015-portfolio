@@ -54,6 +54,11 @@ nav.share-my-work {
     @extend %text-hide;
     &:before { content: "\f1cb"; }
   }
+  .mylinkedin {
+    margin-right: 5px;
+    @extend %text-hide;
+    &:before { content: "\f0e1"; }
+  }
 }
 
 .site-title {
