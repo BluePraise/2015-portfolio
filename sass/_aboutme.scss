@@ -1,14 +1,9 @@
-.about-me {
-	margin-bottom: 20px;
-}
+.about-me { margin-bottom: 20px; }
 
-.looking-good {
-	margin-top: 0;
-}
+.looking-good { margin-top: 0; }
 
-.magalielinda {
-	position: relative;	
-}
+.magalielinda { position: relative;	}
+
 .cta-buttons {
 	position: absolute;
 	width: 100%;
@@ -30,7 +25,8 @@
   background-color: rgba(32, 152, 183, 0.5);
   border-radius: 3px;
   border-bottom: 1px solid #2098b7;
-  opacity: 0;
+  &.first,
+  &.second { opacity: 0; }
   &:hover {
   	background-color: rgba(32, 152, 183, 0.8);
   }
@@ -50,7 +46,6 @@ header.section-intro {
 	h3 {
 		display: inline-block;
 	}	
-
 }
 
 .definitions {

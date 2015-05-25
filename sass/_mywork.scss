@@ -33,7 +33,7 @@ section {
   font-weight: 700;
   font-size: 1.2em;
   color: rgba(255, 255, 255, 0.8);
-  font-family: $oswald;
+  @extend %brand-text;
   background-color: rgba(32, 152, 183, 0.5);
   padding-left: 10px;
   line-height: 2.20em;
