@@ -31,17 +31,17 @@ jQuery(document).ready(function($){
     );
   });
 
-  var clickThingie  = $('li.work-item a');
-  var img           = $('.modal-open .modal-portfolio-image');
+  animatePortfolioItem();
+});
 
-  clickThingie.on('click', function(event){
-    // event.preventDefault();
-    console.log("dfghjkl");
+
+  function animatePortfolioItem(){
+    var img  = $('.modal-open .modal-portfolio-image');
+    
+    // console.log("dfghjkl");
     //place the image of the portfolio outside the browser window
     $('.modal-open .modal-portfolio-image').offset({left: window.outerWidth});
 
-    // img.delay(800).animate({left: "0px"}, 2000);
-    
-  });
-
-});
+    img.delay(800).animate({left: "0px"}, 2000);
+  }
+  

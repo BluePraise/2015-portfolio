@@ -71,6 +71,10 @@ h1 {
   font-size: 1.5em;
 }
 
+strong {
+  font-weight: normal;
+}
+
 nav ul,
 nav ol {
   list-style: none;
@@ -607,10 +611,7 @@ figure.modal-portfolio-image {
 .modal-portfolio--description ul.list-inline {
   list-style: none;
   margin-top: 10px;
-}
-
-.modal-portfolio--date {
-  content: "\f073";
+  font-family: "Oswald", sans-serif;
 }
 
 button.modal-close-button {
@@ -640,9 +641,9 @@ button.modal-close-button {
   box-shadow: none;
   border: none;
   min-height: 100%;
-  padding: 50px 0;
   text-align: center;
   overflow-y: scroll;
+  padding: 70px 0;
 }
 .portfolio-modal .modal-backdrop {
   opacity: 0;
